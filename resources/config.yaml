@@ -1,0 +1,10 @@
+website:
+  baseUrl:    https://www.saucedemo.com/
+  # browser:  headlesschrome
+  browser:  chrome
+
+waitingTime:
+  short:  2s
+  half: 5s
+  long: 10s
+
