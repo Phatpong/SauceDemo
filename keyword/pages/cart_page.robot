@@ -20,15 +20,11 @@ Query Reward In Cart
     Log To Console   Rewards in Cart :: ${cart_reward}
     Set Global Variable    ${cart_reward}
     
-
 Verify Reward In Cart and CheckOut
     ${are_equal}=    Evaluate    ${add_to_cart_reward} == ${cart_reward}
     Run Keyword If    ${are_equal}    Log To Console    Rewards Equal
     Run Keyword If    ${are_equal}    common.Click Element when ready    ${button_checkout}
     Run Keyword If    not ${are_equal}    Log To Console    Rewards not Equal !!!
-    
-
-    
     
 Click CheckOut
     common.Click Element when ready    ${button_checkout}

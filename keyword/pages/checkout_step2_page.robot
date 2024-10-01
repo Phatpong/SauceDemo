@@ -24,6 +24,7 @@ Validate Price and Click Finish
     ${cleaned_prices}=    Create List
 
     ${total}=    Set Variable    0.00
+    
     FOR  ${price}  IN  @{price_list}
         ${cleaned_price}=    Replace String    ${price}    $    ${EMPTY} 
         ${cleaned_price}=    Convert To Number    ${cleaned_price}    2  
